@@ -69,7 +69,7 @@
         <dependency>
             <groupId>com.github.Kaktushose</groupId>
             <artifactId>jda-commands</artifactId>
-            <version>4f098df06f</version>
+            <version>8490a2889e</version>
         </dependency>
         <dependency>
             <groupId>com.github.Kaktushose</groupId>
@@ -92,6 +92,4 @@
             <version>1.2.3</version>
         </dependency>
     </dependencies>
-
-
 </project>
