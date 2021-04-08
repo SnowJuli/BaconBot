@@ -1,5 +1,7 @@
 package com.discord.bacon.bot;
 
+import com.github.kaktushose.jda.commands.annotations.Produces;
+import com.github.kaktushose.jda.commands.api.EmbedCache;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
@@ -19,7 +21,11 @@ public class BaconBot {
     private final String token;
     private JDA jda;
 
+    private final EmbedCache embedCache;
+
     public BaconBot(String token) {
+        embedCache = new EmbedCache("./embeds.json");
+        embedCache.loadEmbedsToCache();
         this.token = token;
     }
 
@@ -55,5 +61,11 @@ public class BaconBot {
     public JDA getJda() {
         return jda;
     }
+
+
+
+
+    @Produces
+    public EmbedCache embedCache() { return embedCache; };
 
 }
