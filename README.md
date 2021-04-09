@@ -1,1 +1,4 @@
-a very cool bot
+# Project Structure
+
+- Bacon -> Discord Bot
+- Eggs -> Webscraper for Instagram
