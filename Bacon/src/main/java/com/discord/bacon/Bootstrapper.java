@@ -11,7 +11,9 @@ public class Bootstrapper {
         BaconBot baconBot = new BaconBot("");
         baconBot.start();
         ReactionListener.startListening(baconBot.getJda());
-        JDACommands jdaCommands = new JDACommandsBuilder(baconBot.getJda()).addProvider(baconBot).setCommandPackage("com.discord.bacon.bot").build();
+        JDACommands jdaCommands = new JDACommandsBuilder(baconBot.getJda())
+                .addProvider(baconBot)
+                .setCommandPackage("com.discord.bacon.bot.commands")
+                .build();
     }
-
 }

@@ -1,15 +1,15 @@
+package com.discord.bacon.bot.commands;
+
 import com.github.kaktushose.jda.commands.annotations.*;
 import com.github.kaktushose.jda.commands.api.EmbedCache;
 import com.github.kaktushose.jda.commands.entities.CommandEvent;
-import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
-
-import java.util.concurrent.TimeUnit;
 
 @CommandController("sub")
 public class SubCommand {
 
-    @Inject EmbedCache embedCache;
+    @Inject
+    EmbedCache embedCache;
 
     @Command("greet")
     public void onSubGreet(CommandEvent event, @Optional Member member) {

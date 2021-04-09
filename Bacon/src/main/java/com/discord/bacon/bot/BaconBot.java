@@ -62,10 +62,8 @@ public class BaconBot {
         return jda;
     }
 
-
-
-
     @Produces
-    public EmbedCache embedCache() { return embedCache; };
-
+    public EmbedCache embedCache() {
+        return embedCache;
+    }
 }
