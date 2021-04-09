@@ -1,0 +1,3 @@
+insta_scrape==2.1.2
+instascrape==0.1
+PyInquirer==1.0.3
